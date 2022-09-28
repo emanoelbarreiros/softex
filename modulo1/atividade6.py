@@ -8,7 +8,7 @@ alunosMaioresNotas = {"A": "", "B": "", "C": "", "D": ""}
 aprovadosPorTurma = {"A": 0, "B": 0, "C": 0, "D": 0}
 for turma in turmas:
     print(f"Turma {turma}:")
-    for n in range(3):
+    for n in range(25):
         nome = input('Informe o nome: ')
         nota = float(input("Informe a nota: "))
         maiorNotaAtual = maioresNotas[turma]
@@ -24,6 +24,7 @@ for turma in turmas:
 # a maior nota de todas
 maiorNotaGeral = 0
 turmaMaiorNotaGeral = 0
+alunoMaiorNota = ""
 for turma,nota in maioresNotas.items():
     if nota > maiorNotaGeral:
         maiorNotaGeral = nota
