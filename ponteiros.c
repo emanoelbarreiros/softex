@@ -4,6 +4,9 @@
 int main() {
     int* vetor = (int *) malloc(5 * sizeof(int));
 
+    int a = 37;
+    int b = incrementar(a);
+
     vetor = (int *) realloc(vetor , 22 * sizeof (int));
 
     for (int i = 0; i < 22; i++) {
@@ -15,4 +18,9 @@ int main() {
     }
 
     free(vetor);
+}
+
+int incrementar(int x) {
+    x = x + 1;
+    return x;
 }
